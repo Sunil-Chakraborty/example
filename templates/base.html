@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ title if title else "Flask App" }}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+<h1>Flask Render Starter</h1>
+<nav>
+<a href="/">Home</a> |
+<a href="/report">Report</a>
+</nav>
+</header>
+
+<hr>
+
+{% block content %}{% endblock %}
+
+</body>
+</html>
