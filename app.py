@@ -6,6 +6,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/preview")
+def preview():
+    return render_template("base.html")
+
 @app.route("/report")
 def report():
     data = {
